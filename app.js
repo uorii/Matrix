@@ -6,7 +6,7 @@ const context = canvas.getContext('2d')
 canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 
-const FONT_SIZE = 16
+const FONT_SIZE = 12
 
 const columns = []
 const columnsCount = canvas.width / FONT_SIZE
@@ -20,14 +20,14 @@ context.font = `bold ${FONT_SIZE}px monospace`
 let column = new Column(100, FONT_SIZE, canvas.height, context)
 
 function animate() {
-    context.fillStyle = 'rgba(0, 0, 0, 0.05'
+    context.fillStyle = 'rgba(0, 0, 0, 0.04'
     context.fillRect(0, 0, canvas.width, canvas.height)
 
-    context.fillStyle = 'green'
+    context.fillStyle = 'purple'
     columns.forEach(column => column.drawSymbol())
    
 
-    setTimeout(() => requestAnimationFrame(animate), 50)
+    setTimeout(() => requestAnimationFrame(animate), 65)
 }
 
 animate()

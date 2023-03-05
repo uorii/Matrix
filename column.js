@@ -10,7 +10,7 @@ export class Column {
     }
 
     drawSymbol() {
-        if (this.y === 0 && Math.random() < 0.98) {
+        if (this.y === 0 && Math.random() < 0.99) {
             return;
         }
 
